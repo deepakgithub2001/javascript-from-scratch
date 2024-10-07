@@ -30,8 +30,12 @@ console.log(isBooleanValue);
 
 let a = 3;
 const b = ++a;
-console.log(`a:${a} b:${b}`);
+console.log(`a:${a} b:${b}`); 
+
+// a => 4, b => 4
 
 let x = 5;
 const y = x++;
 console.log(`x:${x} y:${y}`);
+
+// x => 6, y => 5
