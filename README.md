@@ -1,1 +1,1 @@
-# Learning JavaScript from scratch by HitesH Chaudhary (ChaiAurCode).
+# Learning JavaScript from scratch by Hitesh Chaudhary (ChaiAurCode).
