@@ -24,7 +24,6 @@ let isBoolean = 1;
 let isBooleanValue = Boolean(isBoolean)
 console.log(isBooleanValue);
 
-
 // "33" => 33
 // "33abc" => Nan 
 // true => 1; false => 0;
