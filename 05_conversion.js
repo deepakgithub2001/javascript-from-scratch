@@ -28,3 +28,11 @@ console.log(isBooleanValue);
 // "33" => 33
 // "33abc" => Nan 
 // true => 1; false => 0;
+
+let a = 3;
+const b = ++a;
+console.log(`a:${a} b:${b}`);
+
+let x = 5;
+const y = x++;
+console.log(`x:${x} y:${y}`);
