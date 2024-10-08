@@ -9,16 +9,16 @@ console.log(name,email,hometown);
 //String Interpolation
 //String interpolation in JavaScript allows embedding expressions inside a string. This is done using template literals, which are enclosed by backticks (`) instead of single or double quotes.
 
-let brand = "HP";
-let generation = "i3";
-console.log(`My PC brand is ${brand} and it is come up with ${generation} generation.`);
+//let brand = "HP";
+//let generation = "i3";
+//console.log(`My PC brand is ${brand} and it is come up with ${generation} generation.`); =>My PC brand is HP and it is come up with i3 generation.
 
 // JavaScript provides several built-in string methods that allow you to manipulate and work with strings. These methods make it easier to handle text, search for substrings, extract portions of a string, and modify string contents.
 // Here are some of the most commonly used string methods in JavaScript:
 
 // .length
 // let str = "something";
-// console.log(str.length); =>9
+// console.log(str.length); //=>9
 
 // .toUpperCase()
 // let str = "something";
