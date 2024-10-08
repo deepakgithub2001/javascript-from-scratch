@@ -74,12 +74,12 @@ console.log(name,email,hometown);
  
 //.endsWith(substring)
 // let str = "something";
-// console.log(str.endsWith("ing")); =>true
+// console.log(str.endsWith("ing")); //=>true
 
 //.concat()
-let str1 = "Try";
-let str2 = "Something";
-let str3 = "New";
+// let str1 = "Try";
+// let str2 = "Something";
+// let str3 = "New";
 // console.log(str1.concat( " ", str2, " ", str3)); =>Try Something New
 
 //.repeat(count)
