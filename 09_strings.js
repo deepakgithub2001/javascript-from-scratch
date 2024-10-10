@@ -1,10 +1,10 @@
 // In JavaScript, a string is a sequence of characters used to represent text. Strings are enclosed in either single quotes ('), double quotes ("), or backticks (`) for template literals.
 
-const name = "Deepak" // Here name is a "String" datatype and "Deepak" is a string.
-const email = 'deepak@gmail.com' // Here email is a "String" datatype and "email" is a string. 
-const hometown = `Madhubani` // Here hometown is a "String" datatype and "hometown" is a string. 
+// const name = "Deepak" // Here name is a "String" datatype and "Deepak" is a string.
+// const email = 'deepak@gmail.com' // Here email is a "String" datatype and "email" is a string. 
+// const hometown = `Madhubani` // Here hometown is a "String" datatype and "hometown" is a string. 
 
-console.log(name,email,hometown);
+// console.log(name,email,hometown);
 
 //String Interpolation
 //String interpolation in JavaScript allows embedding expressions inside a string. This is done using template literals, which are enclosed by backticks (`) instead of single or double quotes.
