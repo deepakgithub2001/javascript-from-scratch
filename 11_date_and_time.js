@@ -22,4 +22,4 @@
 
 // let myDate = new Date();
 // console.log(myDate.getDate());
-// =>10
+// =>10 
