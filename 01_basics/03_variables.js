@@ -3,5 +3,5 @@
 // var, let and const, now "var" is not used due to block scope and functional scope.
 // In modern JS. only let and const in use.
 // We can change the value of let variable because this is mutrable, but not const because this is immutable.
-let accountID = 123456789;
-const accountCity = "Noida" 
+// let accountID = 123456789;
+// const accountCity = "Noida" 
