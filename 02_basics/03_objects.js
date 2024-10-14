@@ -40,4 +40,4 @@ console.log(user1.greetingTwo())
 
 
 
-// Object.freeze(user1); //freezing the objetcs, means you can't change the value after the freeze method. 
+// Object.freeze(user1); //freezing the objetcs, means you can't change the value after implement the freeze method. 
