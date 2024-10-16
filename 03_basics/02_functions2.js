@@ -24,4 +24,4 @@ const array = [100, 200, 300, 400, 500]
 function firstValue(get_array){
     return get_array[0]
 }
-console.log(firstValue(array)); 
+console.log(firstValue(array));
