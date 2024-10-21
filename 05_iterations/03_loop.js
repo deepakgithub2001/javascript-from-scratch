@@ -15,7 +15,7 @@ for (const greet of greetings) {
     console.log(`each character is greet ${greet}`);
 
 }
-Map
+// Map
 
 const map = new Map
 map.set("IN", "India")
