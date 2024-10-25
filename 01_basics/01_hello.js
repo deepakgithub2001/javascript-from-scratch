@@ -1,5 +1,5 @@
 console.log("Hello World!");
-const arr = ([] == String)
+const arr = ([1] == String)
 console.log(arr)
 
 
