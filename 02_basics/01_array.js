@@ -27,4 +27,4 @@
 // Arrays in JavaScript are highly versatile and are an essential tool for managing data efficiently.
 // sort.
 // let arr = [12,32,53,48,10];
-// console.log(arr.sort());
+// console.log(arr.sort()); => [10, 12, 32, 48, 53] 
