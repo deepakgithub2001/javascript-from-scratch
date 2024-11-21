@@ -29,4 +29,4 @@
 // Math.max(5,7,9); =>9
 // Math.sqrt(25); =>5
 // Math.pow(2, 3); =>8
-// let result = (1.0 + 2.0).toFixed(3); =>3.000; 
+// let result = (1.0 + 2.0).toFixed(3); =>3.000
