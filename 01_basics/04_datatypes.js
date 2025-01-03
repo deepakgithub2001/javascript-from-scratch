@@ -18,6 +18,8 @@
 // let number = [1,2,3,4,5]
 
 // function greet() {
-//     return Hello;
+//     console.log(Hello World)!;
 // } 
+
+// greet();
 //let currentDate = new Date(); 
