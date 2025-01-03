@@ -11,7 +11,7 @@ for (let i = 1; i <= 10; i++) {
        }
     }  
 
-    let superhero = ["flash", "bataman", "superman"]
+    let superhero = ["flash", "batman", "superman"]
     for (let index = 0; index < superhero.length; index++) {
         const element = superhero[index];
         console.log(element);
