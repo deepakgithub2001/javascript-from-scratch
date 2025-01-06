@@ -210,8 +210,8 @@
 // console.log(Number.isInteger(10.5)); // false
 
 // 32. What is the split() method in strings ?
-//     Q : How do you split a string into an array ?
-//         A : Use split().
+//     
+//          Use split().
 
 // let str = "apple,banana,orange";
 // let fruits = str.split(",");
