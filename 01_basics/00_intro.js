@@ -1,3 +1,5 @@
+// This is the 50 Basic JavaScript Questions and Answers.
+
 // 1. What is JavaScript ?
 
 //     JavaScript is a scripting language used for creating dynamic web content.
@@ -11,6 +13,7 @@
 //         let age = 30;
 // const name = "Alice";
 // var isStudent = true;
+
 // 3. What are data types in JavaScript ?
 
 //     String, Number, Boolean, Object, Null, Undefined.
@@ -37,7 +40,7 @@
 
 // 6. What are operators ?
 
-//     A : Arithmetic(+, -), Assignment(=), Comparison(==, ===), Logical(&&, ||).
+// Arithmetic(+, -), Assignment(=), Comparison(==, ===), Logical(&&, ||).
 
 // let sum = 10 + 5;
 // let isEqual = 5 == "5"; // true
@@ -79,8 +82,8 @@
 // }
 
 // 11. What is null in JavaScript ?
-//     Q : What is null ?
-//         A : It represents an intentionally empty or non - existent value.
+
+//  It represents an intentionally empty or non - existent value.
 
 // let emptyValue = null;
 
@@ -108,8 +111,8 @@
 //         alert("Hello!");
 
 // 16. How do you handle events ?
-//     Q : How do you add a click event ?
-//         A : Use addEventListener.
+//     
+//         Use addEventListener.
 
 //             document.getElementById("btn").addEventListener("click", () => {
 //                 console.log("Button clicked!");
@@ -119,6 +122,7 @@
 //     It outputs messages to the browser console.
 
 //         console.log("Debugging message");
+
 // 18. What is typeof?
 //     It returns the type of a variable.
 
@@ -363,11 +367,11 @@
 //             }
 //         });
 
-//     50. What is a try...catch statement ?
+// 50. What is a try...catch statement ?
 //         It allows you to handle errors gracefully.
 
 //             try {
 //     let result = 10 / 0;
 // } catch (error) {
 //     console.log("Error: " + error.message);
-// } 
+// }  
