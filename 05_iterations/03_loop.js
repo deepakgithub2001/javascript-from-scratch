@@ -9,7 +9,6 @@ for (const num of array) {
 
 }
 
-
 const greetings = "Hello World!"
 for (const greet of greetings) {
     console.log(`each character is greet ${greet}`);

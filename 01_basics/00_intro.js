@@ -16,16 +16,34 @@
 
 // 3. What are data types in JavaScript ?
 
-//     String, Number, Boolean, Object, Null, Undefined.
+// DataTypes are the type of data that can be stored in a variable.
 
-// let str = "Hello";
-// let num = 42;
-// let bool = true;
-// let obj = { key: "value" };
-// let nothing = null;
-// let notDefined;
-// 4. How do you create an array ?
+//There are two types of Datatypes in JS.
 
+//Primitive and Non-Primitive
+
+//Number, String, Boolean, Undefined, Null, Symbol, float and BigInt. are some example of Primitive Datatypes.
+
+//Object, Array, Function, Date are some of example of Non-Primitive Datatypes.
+
+// Primitive
+
+// let num = 5;
+// let float = 5.5;
+// let BigInt = (123456789009876543212345);
+// let isTrue = true;
+// let isFalse = false;
+// let name = "Deepak"
+
+// Non-Primitive
+
+// let person = {name: "Deepak", age: 25, language: "Hindi"};
+// let number = [1,2,3,4,5]
+
+// 4. What is an array in JavaScript?
+
+// An array is a collection of items stored at contiguous memory locations.
+//     Creating an arrray
 //     Use square brackets[].
 
 // let fruits = ["Apple", "Banana", "Orange"];
@@ -36,7 +54,7 @@
 // function greet(name) {
 //     return `Hello, ${name}!`;
 // }
-// console.log(greet("Alice"));
+// console.log(greet("Alice"));  // "Hello, Alice!"
 
 // 6. What are operators ?
 
@@ -47,16 +65,16 @@
 // let isStrictEqual = 5 === "5"; // false
 
 // 7. What is the difference between var, let, and const?
-// var: Function-scoped, can be redeclared.
+//     var: Function-scoped, can be redeclared.
 //     let: Block - scoped, cannot be redeclared.
-//         const: Block - scoped, cannot be reassigned.
+//     const: Block - scoped, cannot be reassigned.
 
 // var x = 10;
 // let y = 20;
 // const z = 30;
 
 // 8. What is the difference between == and ===?
-    
+
 // == checks value; === checks value and type.
 
 //     console.log(5 == "5"); // true
@@ -71,19 +89,33 @@
 //     console.log("Adult");
 // } else {
 //     console.log("Minor");
-// }
+// }  // Adult;
 
 // 10. What is a loop in JavaScript ?
-    
-//         for, while, do...while.
+
+//     A loop is used to execute a block of code repeatedly.
+
+//     for, while, do...while.
 
 //     for(let i = 0; i < 5; i++) {
-//     console.log(i);
+//     console.log(i);  // 0, 1, 2, 3, 4
 // }
+
+//     let index = 1;
+//     while (index <= 10) {
+//     console.log(`The Value is ${index}`);
+//     index = index + 1;
+// }    //The Value is 1..upto 10
+
+//     do {
+//     console.log(`The score is ${score} `);
+//     score = score + 1;
+// }   while (score <= 10)  //The score is 1..upto 10
+
 
 // 11. What is null in JavaScript ?
 
-//  It represents an intentionally empty or non - existent value.
+// It represents an intentionally empty or non - existent value.
 
 // let emptyValue = null;
 
@@ -95,7 +127,9 @@
 // console.log(notDefined); // undefined
 
 // 13. What is an object ?
-//     Use curly braces { }.
+
+//     An object is a collection of key - value pairs.
+//     Using curly braces { }.
 
 // let person = { name: "John", age: 25 };
 // console.log(person.name); // "John"
@@ -103,25 +137,27 @@
 // 14. What is the DOM ?
 //     DOM(Document Object Model) is an API to interact with HTML and CSS.
 
-//         document.body.style.backgroundColor = "blue";
+//     document.body.style.backgroundColor = "blue";
 
 // 15. What is alert ?
+
+//     It displays a message box with a message.
 //     Use alert().
 
-//         alert("Hello!");
+//     alert("Hello!"); // Displays a message box with "Hello!" at top of the page.
 
 // 16. How do you handle events ?
-//     
-//         Use addEventListener.
 
-//             document.getElementById("btn").addEventListener("click", () => {
-//                 console.log("Button clicked!");
-//             });
+// Use addEventListener.
+
+// document.getElementById("btn").addEventListener("click", () => {
+// console.log("Button clicked!");
+// });
 
 // 17. What is console.log ?
 //     It outputs messages to the browser console.
 
-//         console.log("Debugging message");
+//         console.log("Debugging message");  // Debugging message
 
 // 18. What is typeof?
 //     It returns the type of a variable.
@@ -132,19 +168,20 @@
 //     Use backticks `` to embed expressions.
 
 // let name = "Alice";
-// console.log(`Hello, ${name}`);
+// console.log(`Hello, ${name}`); // "Hello, Alice"
 
 // 20. What is a ternary operator ?
-//     It's a shorthand for if.
+//     It's a shorthand for #if.
 
 // let age = 20;
 // let message = age >= 18 ? "Adult" : "Minor";
-// console.log(message);
+// console.log(message); // "Adult"
 
 // 21. How do you convert a string to a number ?
-//     A : Use Number() or parseInt().
+//     Use Number() or parseInt().
 
-// let num = Number("123");
+// let num = String("123"); // "123"
+// let int = parseInt("123"); // 123
 
 // 22. What is an arrow function?
 
@@ -156,11 +193,11 @@
 
 //     Use.length.
 
-//         console.log("Hello".length); // 5
+//     console.log("Hello".length); // 5
 
 // 24. What is a promise ?
-//     Q : What is a promise ?
-//         A : A way to handle asynchronous operations.
+//
+//     A way to handle asynchronous operations.
 
 // let promise = new Promise((resolve, reject) => {
 //     resolve("Done!");
@@ -168,69 +205,78 @@
 
 // 25. What is setTimeout ?
 
+//     It executes a function after a specified time.
 //     Use setTimeout.
 
-//         setTimeout(() => console.log("Delayed"), 2000);
+//     setTimeout(() => console.log("Delayed"), 2000);
 
 // 26. What is setInterval ?
+
+//     It repeatedly executes a function at a specified interval.
 //     Use setInterval.
 
-//         setInterval(() => console.log("Repeating"), 1000);
+//     setInterval(() => console.log("Repeating"), 1000);
 
 // 27. What is an array method ?
+
 //     It adds an item to an array.
 
 // let numbers = [1, 2];
-// numbers.push(3);
+// numbers.push(3); // [1, 2, 3]
 
 // 28. How do you remove elements from an array ?
 
 //     It removes the last item.
 
-// let numbers = [1, 2, 3];
-// numbers.pop();
+//     let numbers = [1, 2, 3];
+//     numbers.pop();
 
 // 29. What is Math.random() ?
 
+//     It generates a random number between 0 and 1.
 //     Use Math.random.
 
-//         console.log(Math.random());
+//     console.log(Math.random()); //0.123456789
 
 // 30. What is Math.floor() ?
+
+//     It rounds a number down to the nearest integer.
 //     Use Math.floor.
 
-//         console.log(Math.floor(3.7)); // 3
-
+//     console.log(Math.floor(3.7)); // 3
 
 // 31. How do you check if a number is an integer ?
 //     Use Number.isInteger().
 
-
-//         console.log(Number.isInteger(10)); // true
-// console.log(Number.isInteger(10.5)); // false
+//    console.log(Number.isInteger(10)); // true
+//    console.log(Number.isInteger(10.5)); // false
 
 // 32. What is the split() method in strings ?
-//     
-//          Use split().
 
-// let str = "apple,banana,orange";
-// let fruits = str.split(",");
-// console.log(fruits); // ["apple", "banana", "orange"]
+//     It splits a string into an array.
+//     Use split().
+
+//     let str = "apple,banana,orange";
+//     let fruits = str.split(",");
+//     console.log(fruits); // ["apple", "banana", "orange"]
 
 // 33. What is the join() method in arrays ?
+
+//     It joins the elements of an array into a string.
 //     Use join().
 
 
-// let fruits = ["apple", "banana", "orange"];
-// let result = fruits.join(", ");
-// console.log(result); // "apple, banana, orange"
+//     let fruits = ["apple", "banana", "orange"];
+//     let result = fruits.join(",");
+//     console.log(result); // "apple,banana,orange"
 
-// 34. What is JSON.stringify() ?
-//     It converts an object into a JSON string.
+// 34. What is JSON?
+//     JSON(JavaScript Object Notation) is a lightweight data interchange format.
 
-// let person = { name: "John", age: 25 };
-// let jsonString = JSON.stringify(person);
-// console.log(jsonString); // '{"name":"John","age":25}'
+//     let person = {
+//         name: "John",
+//         age: 25
+//     };
 
 // 35. What is JSON.parse() ?
 
@@ -244,7 +290,7 @@
 
 //     Use the class keyword.
 
-// class Person {
+//     class Person {
 //     constructor(name, age) {
 //         this.name = name;
 //         this.age = age;
@@ -268,20 +314,19 @@
 //     }
 // };
 
-// person.greet(); // "Hello, John"
+//  person.greet(); // "Hello, John"
 
 // 38. What are template literals used for?
 
 //     Use backticks and ${ } for expressions.
 
-// let a = 5;
-// let b = 10;
-// console.log(`The sum of ${a} and ${b} is ${a + b}`); // "The sum of 5 and 10 is 15"
+//     let a = 5;
+//     let b = 10;
+//     console.log(`The sum of ${a} and ${b} is ${a + b}`); // "The sum of 5 and 10 is 15"
 
 // 39. How do you prevent a form from submitting ?
 
 //     Use event.preventDefault().
-
 
 //         document.getElementById("myForm").addEventListener("submit", (event) => {
 //             event.preventDefault();
@@ -292,7 +337,7 @@
 
 //     A function passed into another function to be executed later.
 
-// function greet(name, callback) {
+//     function greet(name, callback) {
 //     console.log(`Hello, ${name}`);
 //     callback();
 // }
@@ -305,7 +350,7 @@
 
 //     window represents the browser window and provides access to global functions.
 
-//         console.log(window.innerWidth); // Window width
+//     console.log(window.innerWidth); // Window width
 
 // 42. What is an event object in JavaScript ?
 //     It contains details about the event that occurred.
@@ -319,8 +364,8 @@
 //     Both store data in the browser, but localStorage persists across sessions, while sessionStorage is cleared when the browser is closed.
 
 //         localStorage.setItem("name", "Alice");
-// let name = localStorage.getItem("name");
-// console.log(name); // "Alice"
+//         let name = localStorage.getItem("name");
+//         console.log(name); // "Alice"
 
 // 44. What is Array.map() ?
 
@@ -334,22 +379,22 @@
 
 //     It creates a new array with items that pass a test function.
 
-// let numbers = [1, 2, 3, 4];
-// let evenNumbers = numbers.filter(num => num % 2 === 0);
-// console.log(evenNumbers); // [2, 4]
+//     let numbers = [1, 2, 3, 4];
+//     let evenNumbers = numbers.filter(num => num % 2 === 0);
+//     console.log(evenNumbers); // [2, 4]
 
 // 46. What is Array.reduce() ?
 //     It reduces an array to a single value by applying a function.
 
-// let numbers = [1, 2, 3, 4];
-// let sum = numbers.reduce((acc, num) => acc + num, 0);
-// console.log(sum); // 10
+//      let numbers = [1, 2, 3, 4];
+//      let sum = numbers.reduce((acc, num) => acc + num, 0);
+//      console.log(sum); // 10
 
 // 47. What is NaN in JavaScript ?
 
-//     NaN stands for "Not-a-Number".It is returned when a mathematical operation cannot produce a valid number.
+//     NaN stands for "Not-a-Number". It is returned when a mathematical operation cannot produce a valid number.
 
-//         console.log("hello" * 2); // NaN
+//     console.log("hello" * 2); // NaN
 
 // 48. How do you check if a variable is an array ?
 
@@ -357,6 +402,9 @@
 
 // let fruits = ["apple", "banana"];
 // console.log(Array.isArray(fruits)); // true
+
+// let name = "Alice";
+// console.log(Array.isArray(name)); // false
 
 // 49. What is event delegation ?
 //     It is a technique where you add a single event listener to a parent element to manage events for child elements.
@@ -368,10 +416,10 @@
 //         });
 
 // 50. What is a try...catch statement ?
-//         It allows you to handle errors gracefully.
+//     It allows you to handle errors gracefully.
 
-//             try {
+//     try {
 //     let result = 10 / 0;
-// } catch (error) {
+// }   catch (error) {
 //     console.log("Error: " + error.message);
 // }  

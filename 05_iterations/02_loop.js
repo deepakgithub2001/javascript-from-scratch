@@ -5,7 +5,7 @@ let index = 1;
 while (index <= 10) {
     console.log(`The Value is ${index}`);
     index = index + 1;
-}
+}  //The Value is 1
 
 
 let superman = ["flash", "batman", "superman"]
@@ -14,10 +14,10 @@ while (array < superman.length) {
     console.log(`The value is ${superman[array]}`);
     array = array + 1;
 
-}
+}  //The value is flash
 
 let score = 1;
 do {
     console.log(`The score is ${score} `);
     score = score + 1;
-} while (score <= 10) 
+} while (score <= 10)  //The score is 1..upto 10
