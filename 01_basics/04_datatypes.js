@@ -1,7 +1,7 @@
 //There are two types of Datatypes in JS.
 //Primitive and Non-Primitive
 //Number, String, Boolean, Undefined, Null, Symbol, float and BigInt. are some example of Primitive Datatypes.
-//Object, Array, Function, Date are some of example of NoN-primitive Datatypes.
+//Object, Array, Function, Date are some of example of Non-Primitive Datatypes.
 
 // Primitive
 
@@ -21,5 +21,5 @@
 //     console.log(Hello World)!;
 // }
 
-// greet();
+// greet(); //Hello World!
 //let currentDate = new Date(); 

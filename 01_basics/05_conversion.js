@@ -1,28 +1,28 @@
 //Checking the type of datatypes.
 
 let g = 9.8;
-console.log(typeof(g));
+console.log(typeof(g)); //number
 
 let str = "Deepak";
-console.log(typeof(str));
+console.log(typeof(str)); //string
 
 let isTrue = true;
-console.log(typeof(isTrue));
+console.log(typeof(isTrue)); //boolean
 
 let isFalse = false;
-console.log(typeof(isFalse)); 
+console.log(typeof(isFalse)); //boolean
 
 let javascript;
-console.log(typeof(javascript));
+console.log(typeof(javascript)); //undefined
 
 let number = 999;
-let string = String(number);
+let string = String(number); // "999"
 console.log(string);
-console.log(typeof(string));
+console.log(typeof(string)); //string
 
 let isBoolean = 1;
 let isBooleanValue = Boolean(isBoolean)
-console.log(isBooleanValue);
+console.log(isBooleanValue); //true
 
 // "33" => 33
 // "33abc" => Nan 
