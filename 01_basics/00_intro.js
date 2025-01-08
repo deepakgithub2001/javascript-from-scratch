@@ -8,6 +8,7 @@
 
 // 2. How to declare a variable in JavaScript ?
 
+//    variables are the containers for storing data values.
 //     Use var, let, or const.
 
 //         let age = 30;
@@ -29,7 +30,6 @@
 // Primitive
 
 // let num = 5;
-// let float = 5.5;
 // let BigInt = (123456789009876543212345);
 // let isTrue = true;
 // let isFalse = false;
@@ -42,71 +42,79 @@
 
 // 4. What is an array in JavaScript?
 
-// An array is a collection of items stored at contiguous memory locations.
+//     An array is a collection of items stored at contiguous memory locations.
 //     Creating an arrray
 //     Use square brackets[].
 
-// let fruits = ["Apple", "Banana", "Orange"];
+//     let fruits = ["Apple", "Banana", "Orange"];
 
 // 5. What is a function?
-//  A function is defined using the function keyword.
 
-// function greet(name) {
-//     return `Hello, ${name}!`;
+//    A function is a block of code that performs a specific task.
+//    It can take parameters and return a value.
+//    A function is defined using the function keyword.
+
+//    function greet(name) {
+//    return `Hello, ${name}!`;
 // }
 // console.log(greet("Alice"));  // "Hello, Alice!"
 
 // 6. What are operators ?
 
-// Arithmetic(+, -), Assignment(=), Comparison(==, ===), Logical(&&, ||).
+//     Operators are used to perform operations on variables and values.
+//     Arithmetic(+, -), Assignment(=), Comparison(==, ===), Logical(&&, ||).
 
-// let sum = 10 + 5;
-// let isEqual = 5 == "5"; // true
-// let isStrictEqual = 5 === "5"; // false
+//     let sum = 10 + 5;
+//     let isEqual = 5 == "5"; // true
+//     let isStrictEqual = 5 === "5"; // false
 
 // 7. What is the difference between var, let, and const?
 //     var: Function-scoped, can be redeclared.
 //     let: Block - scoped, cannot be redeclared.
 //     const: Block - scoped, cannot be reassigned.
 
-// var x = 10;
-// let y = 20;
-// const z = 30;
+//     var x = 10;
+//     let y = 20;
+//     const z = 30;
 
 // 8. What is the difference between == and ===?
 
 // == checks value; === checks value and type.
 
 //     console.log(5 == "5"); // true
-// console.log(5 === "5"); // false
+//     console.log(5 === "5"); // false
 
 // 9. How do you write a conditional statement ?
 
 //     Use if, else, or else if.
 
-// let age = 18;
-// if (age >= 18) {
+//     let age = 18;
+//     if (age >= 18) {
 //     console.log("Adult");
-// } else {
+// }   else {
 //     console.log("Minor");
 // }  // Adult;
 
 // 10. What is a loop in JavaScript ?
 
 //     A loop is used to execute a block of code repeatedly.
-
 //     for, while, do...while.
 
-//     for(let i = 0; i < 5; i++) {
-//     console.log(i);  // 0, 1, 2, 3, 4
+
+//     for loop are used to execute a block of code a number of times.
+//     for(let i = 0; i < 5 ; i++) {
+//     console.log(i);  // 0,1,2,3,4
 // }
 
+//     while loop are used to execute a block of code as long as the condition is true.
 //     let index = 1;
 //     while (index <= 10) {
 //     console.log(`The Value is ${index}`);
 //     index = index + 1;
-// }    //The Value is 1..upto 10
+// }   // The Value is 1..upto 10
 
+
+//     do...while loop are used to execute a block of code once, and then repeats the loop as long as the condition is true.
 //     do {
 //     console.log(`The score is ${score} `);
 //     score = score + 1;
@@ -115,16 +123,16 @@
 
 // 11. What is null in JavaScript ?
 
-// It represents an intentionally empty or non - existent value.
+//     It represents an intentionally empty or non - existent value.
 
-// let emptyValue = null;
+//     let emptyValue = null;
 
 // 12. What is undefined in JavaScript ?
 
 //     A variable declared but not assigned has the value undefined.
 
-// let notDefined;
-// console.log(notDefined); // undefined
+//     let notDefined;
+//     console.log(notDefined); // undefined
 
 // 13. What is an object ?
 
@@ -148,46 +156,48 @@
 
 // 16. How do you handle events ?
 
-// Use addEventListener.
+//     Events are actions that occur in the browser, like clicking a button or submitting a form.
+//     Use addEventListener.
 
-// document.getElementById("btn").addEventListener("click", () => {
-// console.log("Button clicked!");
+//     document.getElementById("btn").addEventListener("click", () => {
+//     console.log("Button clicked!");
 // });
 
 // 17. What is console.log ?
-//     It outputs messages to the browser console.
 
-//         console.log("Debugging message");  // Debugging message
+//     It outputs messages to the browser console.
+//     console.log("Debugging message");  // Debugging message
 
 // 18. What is typeof?
-//     It returns the type of a variable.
 
-//         console.log(typeof "Hello"); // "string"
+//     It returns the type of a variable.
+//     console.log(typeof "Hello"); // "string"
 
 // 19. What is a template literal ?
+
+//     It's a way to create strings with embedded expressions.
 //     Use backticks `` to embed expressions.
 
-// let name = "Alice";
-// console.log(`Hello, ${name}`); // "Hello, Alice"
+//     let name = "Alice";
+//     console.log(`Hello, ${name}`); // "Hello, Alice"
 
 // 20. What is a ternary operator ?
 //     It's a shorthand for #if.
 
-// let age = 20;
-// let message = age >= 18 ? "Adult" : "Minor";
-// console.log(message); // "Adult"
+//     let age = 20;
+//     let message = age >= 18 ? "Adult" : "Minor";
+//     console.log(message); // "Adult"
 
 // 21. How do you convert a string to a number ?
-//     Use Number() or parseInt().
 
-// let num = String("123"); // "123"
-// let int = parseInt("123"); // 123
+//     Use Number() or parseInt().
+//     let num = String("123"); // "123"
+//     let int = parseInt("123"); // 123
 
 // 22. What is an arrow function?
 
-//  A compact syntax for functions.
-
-// const add = (a, b) => a + b;
+//     A compact syntax for functions.
+//     const add = (a, b) => a + b;
 
 // 23. How do you find the length of a string ?
 
@@ -196,10 +206,9 @@
 //     console.log("Hello".length); // 5
 
 // 24. What is a promise ?
-//
-//     A way to handle asynchronous operations.
 
-// let promise = new Promise((resolve, reject) => {
+//     A way to handle asynchronous operations.
+//     let promise = new Promise((resolve, reject) => {
 //     resolve("Done!");
 // });
 
@@ -221,8 +230,8 @@
 
 //     It adds an item to an array.
 
-// let numbers = [1, 2];
-// numbers.push(3); // [1, 2, 3]
+//     let numbers = [1, 2];
+//     numbers.push(3); // [1, 2, 3]
 
 // 28. How do you remove elements from an array ?
 
@@ -265,14 +274,13 @@
 //     It joins the elements of an array into a string.
 //     Use join().
 
-
 //     let fruits = ["apple", "banana", "orange"];
 //     let result = fruits.join(",");
 //     console.log(result); // "apple,banana,orange"
 
 // 34. What is JSON?
-//     JSON(JavaScript Object Notation) is a lightweight data interchange format.
 
+//     JSON(JavaScript Object Notation) is a lightweight data interchange format.
 //     let person = {
 //         name: "John",
 //         age: 25
@@ -282,9 +290,9 @@
 
 //     It converts a JSON string into a JavaScript object.
 
-// let jsonString = '{"name":"John","age":25}';
-// let person = JSON.parse(jsonString);
-// console.log(person.name); // "John"
+//     let jsonString = '{"name":"John","age":25}';
+//     let person = JSON.parse(jsonString);
+//     console.log(person.name); // "John"
 
 // 36. How do you create a class in JavaScript ?
 
@@ -305,9 +313,9 @@
 // person1.greet(); // "Hello, John"
 
 // 37. What is this in JavaScript ?
-//     this refers to the current object context.
 
-// let person = {
+//     this refers to the current object context.
+//     let person = {
 //     name: "John",
 //     greet() {
 //         console.log(`Hello, ${this.name}`);
@@ -318,6 +326,7 @@
 
 // 38. What are template literals used for?
 
+//     Template literals are used to create strings with embedded expressions.
 //     Use backticks and ${ } for expressions.
 
 //     let a = 5;
@@ -328,10 +337,10 @@
 
 //     Use event.preventDefault().
 
-//         document.getElementById("myForm").addEventListener("submit", (event) => {
-//             event.preventDefault();
-//             console.log("Form submission prevented");
-//         });
+//     document.getElementById("myForm").addEventListener("submit", (event) => {
+//       event.preventDefault();
+//     console.log("Form submission prevented");
+// });
 
 // 40. What is a callback function?
 
@@ -349,15 +358,15 @@
 // 41. What is the window object ?
 
 //     window represents the browser window and provides access to global functions.
-
 //     console.log(window.innerWidth); // Window width
 
 // 42. What is an event object in JavaScript ?
+
 //     It contains details about the event that occurred.
 
 //         document.getElementById("btn").addEventListener("click", (event) => {
 //             console.log(event.target); // Target element
-//         });
+// });
 
 // 43. What are localStorage and sessionStorage ?
 
@@ -371,9 +380,9 @@
 
 //     It creates a new array by applying a function to each item of the original array.
 
-// let numbers = [1, 2, 3];
-// let doubled = numbers.map(num => num * 2);
-// console.log(doubled); // [2, 4, 6]
+//     let numbers = [1, 2, 3];
+//     let doubled = numbers.map(num => num * 2);
+//     console.log(doubled); // [2, 4, 6]
 
 // 45. What is Array.filter() ?
 
@@ -416,6 +425,7 @@
 //         });
 
 // 50. What is a try...catch statement ?
+
 //     It allows you to handle errors gracefully.
 
 //     try {
