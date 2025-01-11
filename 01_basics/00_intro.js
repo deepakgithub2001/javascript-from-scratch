@@ -43,6 +43,9 @@
 // 4. What is an array in JavaScript?
 
 //     An array is a collection of items stored at contiguous memory locations.
+
+// Note - Contiguous memory locations are a memory management technique that allocates a single, uninterrupted block of memory to a process or program. This allows for fast and direct access to data because the CPU can easily calculate the address of any location within the block.
+
 //     Creating an arrray
 //     Use square brackets[].
 
@@ -62,7 +65,7 @@
 // 6. What are operators ?
 
 //     Operators are used to perform operations on variables and values.
-//     Arithmetic(+, -), Assignment(=), Comparison(==, ===), Logical(&&, ||).
+//     Arithmetic(+, -, *, /), Assignment(=), Comparison(==, ===), Logical(&&, ||, !).
 
 //     let sum = 10 + 5;
 //     let isEqual = 5 == "5"; // true
@@ -99,7 +102,6 @@
 
 //     A loop is used to execute a block of code repeatedly.
 //     for, while, do...while.
-
 
 //     for loop are used to execute a block of code a number of times.
 //     for(let i = 0; i < 5 ; i++) {
@@ -191,7 +193,7 @@
 // 21. How do you convert a string to a number ?
 
 //     Use Number() or parseInt().
-//     let num = String("123"); // "123"
+//     let num = Number("123"); // 123
 //     let int = parseInt("123"); // 123
 
 // 22. What is an arrow function?
@@ -211,6 +213,8 @@
 //     let promise = new Promise((resolve, reject) => {
 //     resolve("Done!");
 // });
+
+// Asynchronous operations are a type of operation in computer science that allows a process to continue without waiting for another operation to finish. This means that the host thread can move on to the next statement before the operation is complete. 
 
 // 25. What is setTimeout ?
 
@@ -393,7 +397,7 @@
 //     console.log(evenNumbers); // [2, 4]
 
 // 46. What is Array.reduce() ?
-//     It reduces an array to a single value by applying a function.
+//      It reduces an array to a single value by applying a function.
 
 //      let numbers = [1, 2, 3, 4];
 //      let sum = numbers.reduce((acc, num) => acc + num, 0);
