@@ -5,16 +5,18 @@ const user = {
     qualification: "MCA"
 }
 
-console.log(user);
+console.log(user); // { name: 'Deepak', age: 23, qualification: 'MCA' }
 
 // De-Structuring the objects.
-const { qualification: education } = user
-console.log(education);
+const { qualification: education } = user //
+console.log(education); // MCA   
 
 // Basic of API
+
 // In earlier time the values are come in XML form.
 // But in Modern time the values are come in JSON form.
-// The key and value both Strings in JSON.
+// The key and value both the Strings in JSON.
+
 //Example of JSON.
 //  {
 //       "name": "Deepak",

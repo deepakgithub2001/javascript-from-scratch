@@ -6,8 +6,9 @@ function myFunction() {
 }
 
 
-myFunction
-myFunction()
+myFunction // it's not call the function
+myFunction(); // it's call the function and print the output. 
+// Myself Deepak Kumar.
 
 // #1
 function addTwoNumber(number1, number2) // parameters(@params)
@@ -17,6 +18,7 @@ function addTwoNumber(number1, number2) // parameters(@params)
 }
 
 addTwoNumber(1, 2) //arguments(@arg)
+// 3
 
 // #2
 function addTwoNumber(number1, number2) {
@@ -25,14 +27,14 @@ function addTwoNumber(number1, number2) {
 }
 
 const result = addTwoNumber(5, 7)
-console.log("The Result is", result);
+console.log("The Result is", result); // The Result is 12
 
 // #3
 function addTwoNumber(number1, number2) {
-    return number1 + number2;
+    return number1 + number2; // return the value
 }
 result = addTwoNumber(5, 7)
-console.log("The Result is", result);
+console.log("The Result is", result); // The Result is 12
 
 function userLoggedIn(username) {
     if (username === undefined)
@@ -47,4 +49,4 @@ function userLoggedIn(username) {
 }
 
 
-console.log(userLoggedIn("Deepak")); // if we wre not pass any value it's return undefined.
+console.log(userLoggedIn("Deepak")); // Deepak just logged in.

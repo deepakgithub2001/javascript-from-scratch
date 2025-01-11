@@ -9,6 +9,14 @@ const add1 = (a, b) => {
   let sum = a + b;
   return sum;
 }; //explicit.
+ 
+// When to use Implicit and Explicit return in arrow functions.
+
+// Implicit Return
+// If the function body consists of a single expression, you can omit the curly braces and the return keyword. The expression will be implicitly returned.
+
+// Explicit Return
+// If the function body consists of multiple expressions, you must use curly braces and the return keyword to explicitly return a value.
 
 // Summary Table
 // Context                           Value of this
@@ -23,8 +31,8 @@ const add1 = (a, b) => {
 
 // Arrow Functions vs Regular Functions
 
-// Feature	                   Arrow Function	                       Regular Function
-// this behavior	   Lexically inherited from outer scope	    Bound to the calling object
-// arguments object	            Not available	                        Available
-// Can be used as constructor	      No	                                Yes
-// Syntax	                        Concise	                               Verbose
+// Feature	                        Regular Function                       Arrow Function	
+// this behavior	        Bound to the calling object	       Lexically inherited from outer scope
+// arguments object	                  Available	                            Not Available
+// Can be used as constructor	           Yes                                     No
+// Syntax	                             Verbose                                Consise 

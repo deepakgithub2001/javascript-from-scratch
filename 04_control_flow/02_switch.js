@@ -10,8 +10,8 @@ switch (month) {
         break;
     case 3:
         console.log("March");
-    // break;
-
-    default:
         break;
-} 
+
+    default: console.log("Invalid month");
+        break;
+} // =>March 

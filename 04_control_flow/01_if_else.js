@@ -35,7 +35,7 @@ else {
 
 // && use for AND. all the condition should be true.
 // || use for OR.  at least one condition should be true.
-
+// ! use for NOT.  reverse the condition
 
 const userLoogedIn = true
 const debitCard = true
@@ -47,4 +47,4 @@ if (userEmail || userGoogle) {
 
     console.log("user logged in.");
 
-} 
+}   // =>user logged in.   
