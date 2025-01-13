@@ -8,7 +8,7 @@ const user = {
 console.log(user); // { name: 'Deepak', age: 23, qualification: 'MCA' }
 
 // De-Structuring the objects.
-const { qualification: education } = user //
+const { qualification: education } = user
 console.log(education); // MCA   
 
 // Basic of API

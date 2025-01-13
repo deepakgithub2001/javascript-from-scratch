@@ -28,7 +28,6 @@ const obj1 = { 1: "a", 2: "b", 3: "c" }
 const obj2 = { 4: "d", 5: "e", 6: "f" }
 const obj3 = { 7: "g", 8: "h", 9: "i" }
 
-// const obj = Object.assign({},obj1,obj2,obj3);
 const obj = { ...obj1, ...obj2, ...obj3 }
 console.log(obj); // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f', '7': 'g', '8': 'h', '9': 'i' }
 
@@ -46,7 +45,6 @@ const user1 = [
         email: "amrendra@gmail.com"
     }
 ]
-
 
 console.log(tinderUser); // { name: 'Sam', id: 'sam@tinder999', age: 23 }
 console.log(user1[0].email); // deepak@gmail.com

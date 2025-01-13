@@ -1,6 +1,6 @@
 // #if condition is defined as the, if the given condition is true then excecute that block of code, otherwise skip that line of code and associate in #else code block.  
 
-//if
+// if
 if (2 > 1) {
     console.log(true)
 } else {

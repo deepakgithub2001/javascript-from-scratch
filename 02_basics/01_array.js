@@ -22,16 +22,20 @@
 // let newArr = arr.slice(2,5);
 // console.log(newArr); => [3,4,5]
 
-// 9. Splice(value to delete from, number of value to delete) = returns new array with deleted one and original value changed.Use when you need to add, remove, or replace elements within an array.
+// 9. The splice() method adds and/or removes array elements.
 
-// let arr = [1,2,3,4,5,6,7,8,9,10];
-// let newArr = arr.splice(2,5);
-// console.log(newArr); => [3,4,5,6,7]
+// The splice() method overwrites the original array.
+
+// // Create an Array
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// // At position 2, add "Lemon" and "Kiwi":
+// fruits.splice(2, 0, "Lemon", "Kiwi"); //Banana,Orange,Lemon,Kiwi,Apple,Mango
 
 // Common Array Methods
 
 // concat(): Joins two or more arrays.
-// indexOf(): Returns the first index of an element in the array.
+// indexOf(): checks the position of value in number form.
 // includes(): Checks if an element exists in the array.
 // sort(): Sorts the elements of the array.
 // Arrays in JavaScript are highly versatile and are an essential tool for managing data efficiently.

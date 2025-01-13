@@ -17,15 +17,17 @@
 // let remainder = 9 % 3; =>0 //modulus
 
 // let power =  3 ** 3; =>9 //exponentiation
+
 // let number = 10;
 
 // console.log(number++); =>10 //post increment
+
 // let number = 10;
-
 // console.log(++number); =>11 //pre increment
-// let number1 = 10;
 
+// let number1 = 10;
 // console.log(number1--); =>10 //post decrement
+
 // let number2 = 10; =>
 // console.log(--number2); =>9 //pre decrement
 

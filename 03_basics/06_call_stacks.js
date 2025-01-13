@@ -3,7 +3,7 @@
 // When we write the code in JavaScript it goes first into the Global Excecution Thread.
 // JavaScript is a single threaded language.
 
-// These are some excecition context:-
+// These are some excecution context:-
 // Global Excecution Context
 // Function Excecution Context
 // Eval Excecution Context (Mangoose)

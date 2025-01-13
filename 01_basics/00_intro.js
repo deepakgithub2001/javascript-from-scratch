@@ -23,7 +23,11 @@
 
 //Primitive and Non-Primitive
 
+// The simplest data structures, used for basic data storage. Primitive data types are built into the language and have a fixed size.
+
 //Number, String, Boolean, Undefined, Null, Symbol, float and BigInt. are some example of Primitive Datatypes.
+
+// More complex data structures that contain primitive data structures. Non-primitive data types are created by the programmer and have a variable size.
 
 //Object, Array, Function, Date are some of example of Non-Primitive Datatypes.
 
@@ -42,7 +46,7 @@
 
 // 4. What is an array in JavaScript?
 
-//     An array is a collection of items stored at contiguous memory locations.
+//    An array is a collection of items stored at contiguous memory locations.
 
 // Note - Contiguous memory locations are a memory management technique that allocates a single, uninterrupted block of memory to a process or program. This allows for fast and direct access to data because the CPU can easily calculate the address of any location within the block.
 
@@ -214,7 +218,7 @@
 //     resolve("Done!");
 // });
 
-// Asynchronous operations are a type of operation in computer science that allows a process to continue without waiting for another operation to finish. This means that the host thread can move on to the next statement before the operation is complete. 
+// Asynchronous operations are a type of operation in computer science that allows a process to continue without waiting for another operation to finish. This means that the host thread can move on to the next statement before the operation is complete.
 
 // 25. What is setTimeout ?
 

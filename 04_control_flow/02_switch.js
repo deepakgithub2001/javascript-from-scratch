@@ -1,4 +1,5 @@
 // Switch
+// The switch statement executes a block of code depending on different cases.
 
 month = 3;
 switch (month) {

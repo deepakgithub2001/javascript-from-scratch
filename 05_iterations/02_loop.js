@@ -1,6 +1,7 @@
 // while and do while loop.
+
 // while loop is defined as the loop that runs until the condition is true.
-// do while loop is defined as the loop that runs until the condition is true.
+// do...while loop are used to execute a block of code once, and then repeats the loop as long as the condition is true.
 
 let index = 1;
 
@@ -22,7 +23,8 @@ while (array < superman.length) {
 //The value is superman
 
 let score = 1;
+
 do {
     console.log(`The score is ${score} `);
     score = score + 1;
-} while (score <= 10)  //The score is 1..upto 10
+} while (score <= 10)  //The score is 1..upto 10 
