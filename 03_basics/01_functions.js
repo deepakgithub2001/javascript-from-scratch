@@ -9,13 +9,13 @@ myFunction // it's not call the function
 myFunction(); // it's call the function and print the output. // Myself Deepak Kumar.
 
 // #1
-function addTwoNumber(number1, number2) // parameters(@params)
+function addTwoNumber(number1, number2, a, b) // parameters(@params)
 {
-    console.log(number1 + number2);
+    console.log(number1 + number2, );
 
 }
 
-addTwoNumber(1, 2) //arguments(@arg)
+addTwoNumber(1, 2,) //arguments(@arg)
 // 3
 
 // #2
