@@ -1,4 +1,4 @@
-// Arrow functions are the concise way to write javascript functions. It is comes into the figure with ES6 in 2015."this" Keyword is used to into the array funtions with difeerent behaviors. 
+// Arrow functions are the concise way to write javascript functions. It is comes into the figure with ES6 in 2015."this" Keyword is used to into the arrow funtions with difeerent behaviors. 
 
 // Arrow functions use the => ("fat arrow") syntax. Here’s a basic example:
 

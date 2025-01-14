@@ -5,10 +5,8 @@ function myFunction() {
     console.log("Myself Deepak Kumar.")
 }
 
-
 myFunction // it's not call the function
-myFunction(); // it's call the function and print the output. 
-// Myself Deepak Kumar.
+myFunction(); // it's call the function and print the output. // Myself Deepak Kumar.
 
 // #1
 function addTwoNumber(number1, number2) // parameters(@params)

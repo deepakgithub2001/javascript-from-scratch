@@ -27,7 +27,7 @@
 
 //Number, String, Boolean, Undefined, Null, Symbol, float and BigInt. are some example of Primitive Datatypes.
 
-// More complex data structures that contain primitive data structures. Non-primitive data types are created by the programmer and have a variable size.
+// More complex data structures, used for complex data storage. Non-primitive data types are created by the programmer and have a variable size.
 
 //Object, Array, Function, Date are some of example of Non-Primitive Datatypes.
 
@@ -125,7 +125,6 @@
 //     console.log(`The score is ${score} `);
 //     score = score + 1;
 // }   while (score <= 10)  //The score is 1..upto 10
-
 
 // 11. What is null in JavaScript ?
 
