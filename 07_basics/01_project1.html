@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Basic Color Changer</title>
+</head>
+
+<body>
+    <h1 class="flex justify-center items-center text-3xl font-semibold text-slate-900 mt-5">Basic Color Changer</h1>
+    <div class="flex justify-center items-center gap-5 p-10">
+        <div class="bg-red-500 h-32 w-32 rounded flex justify-center items-center text-xl text-white cursor-pointer"
+            onclick="changeBodyColor('bg-red-500')">Red</div>
+
+        <div class="bg-yellow-500 h-32 w-32 rounded flex justify-center items-center text-white text-xl cursor-pointer"
+            onclick="changeBodyColor('bg-yellow-500')">Yellow</div>
+
+        <div class="bg-green-500 h-32 w-32 rounded flex justify-center items-center text-white text-xl cursor-pointer"
+            onclick="changeBodyColor('bg-green-500')">Green</div>
+
+        <div class="bg-blue-500 h-32 w-32 rounded flex justify-center items-center text-white text-xl cursor-pointer"
+            onclick="changeBodyColor('bg-blue-500')">Blue</div>
+
+        <div class="bg-orange-500 h-32 w-32 rounded flex justify-center items-center text-white text-xl cursor-pointer"
+            onclick="changeBodyColor('bg-orange-500')">Orange</div>
+    </div>
+    <script>
+        function changeBodyColor(colorClass) {
+            document.body.className = colorClass;
+        }
+    </script>
+</body>
+
+</html>
