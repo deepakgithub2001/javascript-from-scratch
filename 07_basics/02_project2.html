@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The BMI Calculator</title>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center gap-10">
+    <div class="bg-white p-10 rounded-lg shadow-lg w-96 h-96 mt-10">
+        <h1 class="text-2xl text-gray-700 font-medium text-center mb-5">The BMI Calculator</h1>
+        <form for="bmiForm" class="space-y-4">
+            <div>
+                <label class="block text-sm text-gray-600 font-medium mb-1" for="height">Height in CMs:</label>
+                <input id="height" name="height"
+                    class="w-full px-1 py-1 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    type="number" required>
+            </div>
+            <div>
+                <label class="block text-sm text-gray-600 font-medium mb-1" for="height">Weight in KGs:</label>
+                <input id="weight" name="weight"
+                    class="w-full p-1 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                    type="number" required>
+            </div><br>
+            <button type="button"
+                class="w-full bg-blue-500 hover:bg-blue-600 px-1 py-2 rounded-lg text-lg text-white font-medium transition duration-200"
+                onclick="calculateBMI()">Calculate</button>
+        </form>
+        <p id="result" class="mt-5 text-lg text-gray-700 font-medium text-center"></p>
+        <p id="guide" class="text-lg text-red-700 font-medium text-center bg-red-500"></p>
+    </div>
+    <div class="bg-white p-10 rounded-lg shadow-lg w-96 mt-10 space-y-3 text-center h-96">
+        <h1 class="text-2xl text-gray-700 font-medium text-center mb-5">BMI Weight Guide</h1>
+        <button class="bg-red-500 p-3 rounded w-full">
+            <p class="text-lg text-white font-medium">Underweight = Less than 18.60</p>
+        </button>
+        <button class="bg-green-500 p-3 rounded w-full">
+            <p class="text-lg text-white font-medium">Normal Range = 18.60 to 24.90</p>
+        </button>
+        <button class="bg-yellow-500 p-3 rounded w-full">
+            <p class="text-lg text-white font-medium">Overweight = Greater than 24.90</p>
+        </button>
+    </div>
+    <script>
+        function calculateBMI() {
+            const height = document.getElementById('height').value / 100;
+            const weight = document.getElementById('weight').value;
+            if (height > 0 && weight > 0) {
+                const bmi = (weight / (height * height)).toFixed(2);
+                guide(bmi);
+                document.getElementById('result').innerText = `Your BMI is: ${bmi}`;
+            } else {
+                document.getElementById('result').innerText = "Please enter a valid height and weight.";
+            }
+        }
+
+        function guide(bmi) {
+            const guide = document.getElementById('guide')
+            if (bmi < 18.60) {
+                guide.innerText = "Underweight";
+                guide.style.backgroundColor = "red"
+
+            }
+            else if (bmi >= 18.60 && bmi <= 24.90) {
+                guide.innerText = "Normal"
+                guide.style.backgroundColor = "green"
+            }
+            else {
+                guide.innerText = "Overweight"
+                guide.style.backgroundColor = "yellow"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
