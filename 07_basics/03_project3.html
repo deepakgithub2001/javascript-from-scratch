@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Digital Clock</title>
+</head>
+
+<body>
+    <div
+        class="flex-col justify-center items-center h-52 w-1/4 mx-auto bg-blue-500 mt-10 rounded text-center space-y-3">
+        <h1 class="text-2xl text-white font-bold p-3">Your Local Time</h1>
+        <button id="dateTime" class="bg-white p-2.5 rounded text-yellow-400 text-lg font-semibold shadow-lg"
+            onclick="dateTime()">Get Time & Date!</button>
+        <div class="flex justify-center items-center gap-3">
+            <p id="time" class="text-lg text-white font-medium"></p>
+            <p id="date" class="text-lg text-white font-medium"></p>
+        </div>
+    </div>
+</body>
+<script>
+    function dateTime() {
+        const timeElement = document.getElementById('time')
+        const dateElement = document.getElementById('date')
+
+        setInterval(function () {
+            const date_time = new Date();
+
+            const day = String(date_time.getDate()).padStart(2, '0');
+            const month = String(date_time.getMonth() + 1).padStart(2, '0');
+            const year = date_time.getFullYear();
+
+            const timeFormat = date_time.toLocaleTimeString();
+            const dateFormat = `${day}/${month}/${year}`
+
+            timeElement.innerText = timeFormat + ",";
+            dateElement.innerText = dateFormat;
+
+        }, 0)
+    }
+
+</script>
+
+</html>
