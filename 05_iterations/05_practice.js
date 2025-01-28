@@ -3,7 +3,7 @@
 //     console.log(i);
 // }
 
-// // Write a program to print all even numbers between 1 and 20.
+// Write a program to print all even numbers between 1 and 20.
 // let j = 1;
 // while (j <= 20) {
 //     if (j % 2 == 0) {
@@ -129,9 +129,9 @@
 //     let row = ""
 //     for (let j = 0; j <= i; j++) {
 //         row += "*"
-//     }   
+//     }
 //     console.log(row);
-// } 
+// }
 
 // Print a simple Triangle Pattern
 
