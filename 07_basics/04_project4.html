@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Guess The Number</title>
+</head>
+
+<body class="bg-slate-300">
+    <div class="flex justify-center items-center gap-10 mt-5 mb-5">
+        <div class="bg-white w-1/2 h-auto rounded-lg shadow-lg">
+            <h1 class="bg-orange-500 text-2xl text-white font-medium text-center mt-5 p-2.5 w-[90%] mx-auto rounded">
+                Guessing Number Game.
+            </h1>
+            <p class="bg-blue-500 text-[16px] font-medium text-center text-white mt-5 rounded p-2 w-[90%] mx-auto">
+
+                Try & Guess the number between 1 and 100.
+            </p>
+            <p class="bg-green-500 text-[15px] font-medium text-center text-white mt-3 rounded p-2 w-[90%] mx-auto">
+                You have 10 attemts to guess the right number.
+            </p><br>
+            <hr>
+            <h1 class="bg-yellow-500 text-2xl text-white font-medium text-center mt-5 p-2.5 w-[70%] mx-auto rounded">
+                Guess the Number
+            </h1>
+            <div class="flex justify-center items-center">
+                <input id="valueInput"
+                    class="mt-5 p-3 w-1/2 rounded-lg border border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+                    type="number" placeholder="Type a number..." min="0" max="100"
+                    oninput="validity.valid||(value='');">
+            </div>
+            <div class="flex justify-center items-center mt-5">
+                <button class="bg-blue-500 text-lg text-white px-2 py-1 mb-5 rounded"
+                    onclick="generateNumber()">Submit</button>
+            </div>
+            <div class="w-[45%] mx-auto text-lg text-white font-medium space-y-3 mb-5">
+                <p class="rounded text-center font-medium" id="lowOrhigh"></p>
+                <p><button id="newButton"
+                        class="bg-blue-500 w-1/2 mx-auto text-white text-center font-medium p-1.5 rounded hidden mt-5">Play
+                        Again!</button></p>
+                <p class="bg-blue-500 rounded p-1 w-[60%] mx-auto text-center" id="previous">Previous Guesses:</p>
+                <p class="bg-blue-500 text-sm rounded px-3" id="preGuess"></p>
+                <p class="bg-green-500 rounded p-1 w-[60%] mx-auto text-center" id="remaining">Guesses Remaining:</p>
+                <p class="w-1/5 mx-auto bg-green-500 text-lg rounded text-center" id="remGuess"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const randomNumber = parseInt(Math.random() * 100 + 1);
+        console.log(randomNumber);
+
+        const valueInp = document.getElementById('valueInput');
+        const preGuess = document.getElementById('preGuess');
+        const remGuess = document.getElementById('remGuess');
+        const lowOrhigh = document.getElementById('lowOrhigh');
+        const newButton = document.getElementById('newButton');
+        const previous = document.getElementById('previous');
+        const remaining = document.getElementById('remaining');
+
+        let count = 10;
+        const guessArray = [];
+        function generateNumber() {
+
+            const inpValue = parseInt(valueInp.value);
+            if (count > 0) {
+
+                if (randomNumber === inpValue) {
+                    lowOrhigh.innerText = "Congrats! You guessed it right."
+                    lowOrhigh.style.backgroundColor = "green"
+                    newButton.style.display = "block"
+                    preGuess.style.display = "none"
+                    remGuess.style.display = "none"
+                    previous.style.display = "none"
+                    remaining.style.display = "none"
+                }
+
+                else if (randomNumber < inpValue) {
+                    lowOrhigh.innerText = "Number is too high."
+                    lowOrhigh.style.backgroundColor = "yellow"
+                }
+
+                else if (randomNumber > inpValue) {
+                    lowOrhigh.innerText = "Number is too low."
+                    lowOrhigh.style.backgroundColor = "red"
+                }
+
+                count--;
+                remGuess.innerText = count
+                guessArray.push(inpValue)
+                preGuess.innerText = guessArray;
+                valueInp.value = " "
+            }
+
+            else {
+
+            }
+        }
+    </script>
+</body>
+
+</html>
