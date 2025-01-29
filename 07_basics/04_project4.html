@@ -38,7 +38,8 @@
             <div class="w-[45%] mx-auto text-lg text-white font-medium space-y-3 mb-5">
                 <p class="rounded text-center font-medium" id="lowOrhigh"></p>
                 <p><button id="newButton"
-                        class="bg-blue-500 w-1/2 mx-auto text-white text-center font-medium p-1.5 rounded hidden mt-5">Play
+                        class="bg-blue-500 w-1/2 mx-auto text-white text-center font-medium p-1.5 rounded hidden mt-5"
+                        onclick="resetGame()">Play
                         Again!</button></p>
                 <p class="bg-blue-500 rounded p-1 w-[60%] mx-auto text-center" id="previous">Previous Guesses:</p>
                 <p class="bg-blue-500 text-sm rounded px-3" id="preGuess"></p>
@@ -49,7 +50,8 @@
     </div>
 
     <script>
-        const randomNumber = parseInt(Math.random() * 100 + 1);
+
+        let randomNumber = parseInt(Math.random() * 100 + 1);
         console.log(randomNumber);
 
         const valueInp = document.getElementById('valueInput');
@@ -61,42 +63,74 @@
         const remaining = document.getElementById('remaining');
 
         let count = 10;
-        const guessArray = [];
+        let guessArray = [];
+
         function generateNumber() {
-
             const inpValue = parseInt(valueInp.value);
+
+            if (!inpValue || inpValue < 1 || inpValue > 100) {
+                lowOrhigh.innerText = "Please enter a number between 1 and 100.";
+                lowOrhigh.style.backgroundColor = "orange";
+                return;
+            }
+
             if (count > 0) {
-
                 if (randomNumber === inpValue) {
-                    lowOrhigh.innerText = "Congrats! You guessed it right."
-                    lowOrhigh.style.backgroundColor = "green"
-                    newButton.style.display = "block"
-                    preGuess.style.display = "none"
-                    remGuess.style.display = "none"
-                    previous.style.display = "none"
-                    remaining.style.display = "none"
+                    lowOrhigh.innerText = "Congrats! You guessed it right.";
+                    lowOrhigh.style.backgroundColor = "green";
+                    newButton.style.display = "block";
+                    preGuess.style.display = "none";
+                    remGuess.style.display = "none";
+                    previous.style.display = "none";
+                    remaining.style.display = "none";
+                    guessArray = [];
+                    count = 10;
+                    valueInp.value = "";
+                } else if (randomNumber < inpValue) {
+                    lowOrhigh.innerText = "Number is too high.";
+                    lowOrhigh.style.backgroundColor = "yellow";
+                    count--;
+                    remGuess.innerText = count;
+                    guessArray.push(inpValue);
+                    preGuess.innerText = guessArray.join(", ");
+                    valueInp.value = "";
+                } else {
+                    lowOrhigh.innerText = "Number is too low.";
+                    lowOrhigh.style.backgroundColor = "red";
+                    count--;
+                    remGuess.innerText = count;
+                    guessArray.push(inpValue);
+                    preGuess.innerText = guessArray.join(", ");
+                    valueInp.value = "";
                 }
-
-                else if (randomNumber < inpValue) {
-                    lowOrhigh.innerText = "Number is too high."
-                    lowOrhigh.style.backgroundColor = "yellow"
-                }
-
-                else if (randomNumber > inpValue) {
-                    lowOrhigh.innerText = "Number is too low."
-                    lowOrhigh.style.backgroundColor = "red"
-                }
-
-                count--;
-                remGuess.innerText = count
-                guessArray.push(inpValue)
-                preGuess.innerText = guessArray;
-                valueInp.value = " "
             }
 
-            else {
-
+            if (count === 0) {
+                lowOrhigh.innerText = `Game Over! The correct number was ${randomNumber}.`;
+                lowOrhigh.style.backgroundColor = "gray";
+                newButton.style.display = "block";
+                valueInp.disabled = true; // Disable input field
             }
+        }
+
+        function resetGame() {
+            randomNumber = parseInt(Math.random() * 100 + 1);
+            console.log(randomNumber);
+
+            count = 10;
+            guessArray = [];
+
+            newButton.style.display = "none";
+            preGuess.style.display = "block";
+            remGuess.style.display = "block";
+            previous.style.display = "block";
+            remaining.style.display = "block";
+            lowOrhigh.innerText = "";
+            lowOrhigh.style.backgroundColor = "transparent";
+            remGuess.innerText = count;
+            preGuess.innerText = "";
+            valueInp.value = "";
+            valueInp.disabled = false; // Re-enable input field
         }
     </script>
 </body>
