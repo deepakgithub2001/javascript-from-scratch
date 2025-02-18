@@ -35,4 +35,4 @@ const add1 = (a, b) => {
 // this behavior	        Bound to the calling object	       Lexically inherited from outer scope
 // arguments object	                  Available	                            Not Available
 // Can be used as constructor	           Yes                                     No
-// Syntax	                             Verbose                                Consise 
+// Syntax	                             Verbose                                Concise 
